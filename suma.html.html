@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head> 
+         <meta charset="utf-8">
+         <title><center>suma</center></title>
+     </head>
+     <style>
+        body{ 
+          background-color: violet;
+          font-family: cursive;
+          font-style:italic;
+          text-align: center;
+        }
+     </style>
+      
+     <body>
+         <form action="">
+           <h1><center>suma</center></h1>
+           <hr>
+           <center><input type="text" id="numero1"></center>
+           <center><input type="text" id="numero2"></center>
+           <center><input type="button" value="suma" onclick="alert(suma(10,50));"></center>
+         </form>
+     </body>   
+     <script>
+         var suma= function (numero1,numero2){ 
+             var numero1 = parseFloat(document.getElementById("numero1").value);
+             var numero2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = numero1 + numero2;
+            return resultado;
+         }
+      </script>
+</html>         
